@@ -9,82 +9,124 @@ h2 {
   font-size: 50px;
   color: black;
   margin: 10px 0px 40px 0px;
-  text-align: center;
+  padding-left: 29%;
 }
 p {
   color: black;
 }
-
-/*navbar*/
-.sidenav {
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
-  background-color: #6a7daf;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 40px;
-}
-
-.sidenav a {
-  padding: 8px 0px 0px 32px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #3e4e74;
-}
-
-.sidenav .closebtn {
-  position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  column-count: 4;
+  column-gap: 20px;
+
 }
 
-/* ids */
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #818181;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 #sidebar {
-  font-size:17px;
-  transition: 0.3s;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 32px 8px 8px 24px;
+  font-size: 17px;
+
 }
 #sidebar1 {
-  padding: 32px 8px 8px 24px;
+  font-size: 20px;
+  transition: 0.3s;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
-/* adjust */
+#sidebar2 {
+  font-size: 20px;
+  transition: 0.3s;
+  padding-top: 19px;
+  padding-bottom: 2px;
+}
+
+#sidebar3 {
+  font-size: 20px;
+  transition: 0.3s;
+  padding-top: 71px;
+  padding-bottom: 2px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.card {
+   padding: 20px 20px 20px 20px;
+   margin: 0px 10% 40% 65%;
+   background-color: #f0f2f7ff;
+   opacity: .5;
 }
 
-/* screen organization */
+.card2 {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f0f2f7ff;
+  opacity: 0;
+  z-index: -10;
+
+}
+.bottomleft{
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+
+
+
+}
+
 .leftcolumn {
   float: left;
   width: fit-content;
 }
 .rightcolumn {
   float: right;
-  width: 95%;
   height: -webkit-fill-available;
-}
-
-.card {
-   padding: 20px 20px 20px 20px;
-   margin: 0px 10% 40% 65%;
-   background-color: #f0f2f7ff;
-   opacity: .5;
 }
