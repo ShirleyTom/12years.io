@@ -2,6 +2,7 @@
 body {
   font-family: 'Playfair Display', serif;
   transition: background-color .5s;
+  background-image: url("pics/elephant.png");
 }
 
 h2 {
