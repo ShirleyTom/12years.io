@@ -6,16 +6,27 @@ h2{
   font-family: 'Playfair Display', serif;
 }
 
-input{
-  font-family: 'Playfair Display', serif;
+label{
+  font-family: 'Playfair Display', serif !important;
   border: 0px;
+}
+
+input{
+  font-family: 'Playfair Display', serif !important;
+  border: 0px !important;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+  padding: 5px !important;
 }
 
 textarea{
-  font-family: 'Playfair Display', serif;
-  border: 0px;
+  font-family: 'Playfair Display', serif !important;
+  border: 0px !important;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+  padding: 5px !important;
 }
 
 button{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif !important;
 }
