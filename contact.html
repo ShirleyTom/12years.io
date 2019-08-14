@@ -13,11 +13,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
-  <title>Contact Form Example</title>
+
 </head>
+<body style = "background-color:#f0f2f7ff" text-align = "center">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <br>
+    <br>
+    <br>
+   <div class="column">
+    <a id="sidebar1" href="#">Asia</a>
+      <a id="sidebar" href="#">Cities<a>
+      <a id="sidebar" href="#">Taming<a>
+      <a id="sidebar" href="#">Loss of Habitat<a>
+      <a id="sidebar" href="#">Transportation<a>
+      <a id="sidebar1" href="contact.html" class="bottomleft">Contact Us!</a>
+    </div>
+    <br>
+    <br>
+    <br>
+   <div class="column">
+    <a id="sidebar3" href="#">America</a>
+      <a id="sidebar" href="#">Cities<a>
+      <a id="sidebar" href="#">Taming<a>
+      <a id="sidebar" href="#">Loss of Habitat<a>
+      <a id="sidebar" href="#">Transportation<a>
+  </div>
+  <br>
+  <br>
+  <br>
+     <div class="column">
+     <a id="sidebar2" href="#">Africa</a>
+      <a id="sidebar" href="#">Cities<a>
+      <a id="sidebar" href="#">Taming<a>
+      <a id="sidebar" href="#">Loss of Habitat<a>
+      <a id="sidebar" href="#">Transportation<a>
+  </div>
+  <br>
+  <br>
+  <br>
+     <div class="column">
+    <a id="sidebar2" href="#">Antarctica</a>
+      <a id="sidebar" href="#">Cities<a>
+      <a id="sidebar" href="#">Taming<a>
+      <a id="sidebar" href="#">Loss of Habitat<a>
+      <a id="sidebar" href="#">Transportation<a>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+  	   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 
 <center>
-<body style = "background-color:#f0f2f7ff" text-align = "center">
+<div class="rightcolumn">
+  <div id="main">
+
   <h2 class="content-head is-center">Contact Us</h2>
 
 <!-- START HERE -->
@@ -61,11 +113,25 @@
     </div>
 
   </form>
+  </center>
+  <script>
+  /* Open when someone clicks on the span element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
 
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+</div>
+</div>
+</div>
 <!-- END -->
 </body>
-</center>
+
 
 </html>
