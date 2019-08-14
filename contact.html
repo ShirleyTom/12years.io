@@ -2,32 +2,23 @@
 <html>
 <link rel = "stylesheet" href = "contact.css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<script src="contact.js"></script>
 <script>
-var fs = require('fs');
-function submitform(){
-let info = JSON.stringify(myForm);
 
-fs.writeFileSync('file.json', info, finished);
-
-                function finished(err)
-                {
-                    console.log('success');
-                }
-  };
 </script>
 <head>
-<center><h1>12 years</h1></center>
+<center><title>12 years</title></center>
 <center><h2>Contact</h2></center>
 </head>
 <center><body style = "background-color:#f0f2f7ff" text-align = "center">
-<form action="#" id= "myForm" type="post">
-  <input type="email" id="email" size="35" style="box-shadow: 7px 7px 10px grey" placeholder="email">
+<form>
+  <input type="email" name='email' size="35" style="box-shadow: 7px 7px 10px grey" placeholder="email">
   <p></p>
-  <input type="text" id="subject" size="35" style="box-shadow: 7px 7px 10px grey" placeholder="subject">
+  <input type="text" name='subject' size="35" style="box-shadow: 7px 7px 10px grey" placeholder="subject">
   <p></p>
-  <textarea id="text" rows="10" cols="35" style="box-shadow: 7px 7px 10px grey" placeholder="text"></textarea>
+  <textarea name='text' rows="10" cols="35" style="box-shadow: 7px 7px 10px grey" placeholder="text"></textarea>
   <p></p>
-  <button onclick="submitform()">Submit</button>
+  <input type="button" id="submit" value="submit">
 </form>
 </body></center>
 </html>
