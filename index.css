@@ -72,24 +72,26 @@ p {
 
 }
 #sidebar1 {
-  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
   transition: 0.3s;
-  padding-top: 5px;
   padding-bottom: 2px;
+  font-family: 'Playfair Display', serif;
 }
-
 #sidebar2 {
-  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
   transition: 0.3s;
-  padding-top: 19px;
+  padding-top: 23px;
   padding-bottom: 2px;
 }
 
-#sidebar3 {
-  font-size: 20px;
+#bot {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
   transition: 0.3s;
-  padding-top: 71px;
-  padding-bottom: 2px;
+  bottom: 25px;
+  left: 8px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
