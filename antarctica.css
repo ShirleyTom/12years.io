@@ -1,29 +1,20 @@
-/*paragraphs*/
 body {
+  background-image: url('pics/panda (2).jpg');
+  background-color: #f0f2f7ff ;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top;
+  background-size: 100%;
+  margin: 0px;
   font-family: 'Playfair Display', serif;
-  transition: background-color .5s;
-  background-color:#f0f2f7ff;
 }
-h1{
+
+.title{
   font-size: 50px;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  margin-top: 10px !important;
+  color:black;
+
 }
-h2 {
-  font-size: 40px;
-  color: black;
-}
-h3 {
-  font-size: 30px;
-  color: black;
-  margin-bottom: 40px;
-}
-p {
-  color: black;
-  line-height: 2;
-}
-/* The Overlay (background) */
+
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
@@ -52,7 +43,9 @@ p {
 
 /* The navigation links inside the overlay */
 .overlay a {
+  padding: 8px;
   text-decoration: none;
+  font-size: 20px;
   color: #f1f1f1;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -74,16 +67,7 @@ p {
 #sidebar {
   padding: 32px 8px 8px 24px;
   font-size: 17px;
-
 }
-/*
-#sidebar1 {
-  font-size: 20px;
-  transition: 0.3s;
-  padding-top: 5px;
-  padding-bottom: 2px;
-}
-*/
 #sidebar1 {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
@@ -95,7 +79,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   transition: 0.3s;
-  padding-top: 11px;
+  padding-top: 23px;
   padding-bottom: 2px;
 }
 
@@ -103,7 +87,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   transition: 0.3s;
-  bottom: 5px;
+  bottom: 25px;
   left: 8px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -115,40 +99,50 @@ p {
     right: 35px;
   }
 }
-.card {
-   padding: 4% 0px 10px 20px;
-   margin: 0px;
-   background-color: #f0f2f7ff;
-   opacity: .5;
-   width: 40%;
-   float:left;
-   text-align: justify;
-}
-.card2 {
-  padding-top: 4%;
-  padding-right: 5px;
-  padding-bottom: 60%;
-  padding-left: 20px;
-  float:right;
-  width: 45%;
-}
+
 .bottomleft{
   position: absolute;
   bottom: 100px;
   left: 10px;
 }
+
 .leftcolumn {
   float: left;
   width: fit-content;
 }
+
 .rightcolumn {
   float: right;
   height: -webkit-fill-available;
 }
-.row {
-  height: 634px;
+
+.card1 {
+  opacity: 0.6;
+  width: 1250px;
+  height: 550px;
+  background-color: black;
 }
-img {
-  height: 68%;
-  position: absolute;
+
+.card2 {
+  width: 800px;
+  height: 400px;
+  }
+
+.card3 {
+  opacity: 1;
+  width: 500px;
+  height: 400px;
+  background-color: #dcefdc;
+}
+
+.container1 {
+  margin-left: 200px;
+  height: 100%;
+  display: flex;
+}
+
+.container2 {
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
 }
