@@ -1,54 +1,111 @@
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+body {
+  background-color: #f0f2f7ff ;
+  font-family: 'Playfair Display', serif;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
+.title{
+  font-size: 50px;
+  color:black;
+
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  column-count: 4;
+  column-gap: 20px;
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #818181;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#sidebar {
+  padding: 32px 8px 8px 24px;
+  font-size: 17px;
+}
+#sidebar1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
   transition: 0.3s;
+  padding-bottom: 2px;
+  font-family: 'Playfair Display', serif;
+}
+#sidebar2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  transition: 0.3s;
+  padding-top: 23px;
+  padding-bottom: 2px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+#bot {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  transition: 0.3s;
+  bottom: 25px;
+  left: 8px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.bottomleft{
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
 }
 
-/* Style the tab content */
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+.leftcolumn {
+  float: left;
+  width: fit-content;
 }
 
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-h1{
-  color: #13315C;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-h2{
-  color: #13315C;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-p{
-  color: #13315C;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.rightcolumn {
+  float: right;
+  height: -webkit-fill-available;
 }
