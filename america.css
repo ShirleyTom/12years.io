@@ -1,9 +1,13 @@
 /*paragraphs*/
 body {
+  background-image: url('pics/bear.jpg');
+  background-color: #f0f2f7ff ;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top;
+  background-size: 100%;
+  margin: 0px;
   font-family: 'Playfair Display', serif;
-  transition: background-color .5s;
-  background-color:#f0f2f7ff;
-  margin-top: 0px;
 }
 h1{
   font-size: 50px;
@@ -21,8 +25,10 @@ h3 {
   margin-bottom: 40px;
 }
 p {
-  color: black;
+  color: white;
   line-height: 2;
+  text-align: justify;
+  width: 60%;
 }
 /* The Overlay (background) */
 .overlay {
@@ -138,10 +144,14 @@ p {
 }
 .rightcolumn {
   float: right;
-  height: -webkit-fill-available;
+  height: -webkit-fill-available; 
 }
 .row {
-  height: 634px;
+  opacity: 0.6;
+  width: 80%;
+  height: 550px;
+  background-color: black;
+  text-align:center;
 }
 img {
   height: 68%;
