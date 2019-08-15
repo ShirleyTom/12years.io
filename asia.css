@@ -2,7 +2,9 @@ body {
   background-image: url('pics/panda.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center;
+  background-position: top;
+  height: 60%;
+  margin: 0px;
 }
 
 .title{
@@ -15,12 +17,6 @@ body {
   background-image: url("img_girl.jpg");
 
   /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .overlay {
@@ -129,7 +125,7 @@ body {
   /* Add shadows to create the "card" effect */
   opacity: 0.6;
   width: 1250px;
-  height: 500px;
+  height: 550px;
   background-color: black;
 }
 
