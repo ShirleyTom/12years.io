@@ -1,18 +1,21 @@
-/*paragraphs*/
-body {
-  font-family: 'Playfair Display', serif;
-  transition: background-color .5s;
-  background-image: url("pics/elephant.png");
-}
 
-h2 {
+.bg {
+  /* The image used */
+  background-image: url("pics/panda.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
   font-size: 50px;
-  color: black;
+  color:white;
+
 }
-p {
-  color: black;
-}
-/* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
@@ -96,21 +99,7 @@ p {
     right: 35px;
   }
 }
-.card {
-   padding: 20px 20px 20px 20px;
-   margin: 0px 10% 40% 65%;
-   background-color: #f0f2f7ff;
-   opacity: .5;
-}
 
-.card2 {
-  padding: 0px;
-  margin: 0px;
-  background-color: #f0f2f7ff;
-  opacity: 0;
-  z-index: -10;
-
-}
 .bottomleft{
   position: absolute;
   bottom: 100px;
@@ -127,4 +116,21 @@ p {
 .rightcolumn {
   float: right;
   height: -webkit-fill-available;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  opacity: 0.6;
+  width: 1250px;
+  height: 500px;
+  background-color: black;
+}
+
+/* Add some padding inside the card container */
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
