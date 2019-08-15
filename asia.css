@@ -1,9 +1,10 @@
 body {
-  background-image: url('pics/panda.png');
+  background-image: url('pics/panda.jpg');
+  background-color: #f0f2f7ff ;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: top;
-  height: 60%;
+  background-size: 100%;
   margin: 0px;
 }
 
@@ -11,12 +12,6 @@ body {
   font-size: 50px;
   color:white;
 
-}
-.bg{
-  /* The image used */
-  background-image: url("img_girl.jpg");
-
-  /* Full height */
 }
 
 .overlay {
@@ -107,33 +102,43 @@ body {
   position: absolute;
   bottom: 100px;
   left: 10px;
-
-
-
 }
 
 .leftcolumn {
   float: left;
   width: fit-content;
 }
+
 .rightcolumn {
   float: right;
   height: -webkit-fill-available;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
+.card1 {
   opacity: 0.6;
   width: 1250px;
   height: 550px;
   background-color: black;
 }
 
-/* Add some padding inside the card container */
+.card2 {
+  opacity: 0;
+  float: left;
+  width: 700px;
+  height: 400px;
+  background-color: black;
+}
+
+.card3 {
+  opacity: 0;
+  float: right;
+  width: 700px;
+  height: 400px;
+  background-color: black;
+}
+
 .container {
+  margin: 10px;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
 }
