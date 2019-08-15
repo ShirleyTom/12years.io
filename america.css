@@ -79,16 +79,15 @@ p {
 
 }
 #sidebar1 {
-  left:8px;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s;
   padding-bottom: 2px;
   font-family: 'Playfair Display', serif;
 }
 #sidebar2 {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s;
   padding-top: 23px;
   padding-bottom: 2px;
@@ -96,9 +95,9 @@ p {
 
 #bot {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s;
-  bottom: 5px;
+  bottom: 25px;
   left: 8px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
