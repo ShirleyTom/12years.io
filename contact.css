@@ -1,9 +1,21 @@
 h1{
+  font-size: 40px;
   font-family: 'Playfair Display', serif;
 }
 
 h2{
   font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+a {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  color: black;
 }
 
 label{
@@ -131,6 +143,6 @@ button{
 }
 .rightcolumn {
   float: right;
-  padding-right: 39%;
+  padding-right: 37%;
   height: -webkit-fill-available;
 }
