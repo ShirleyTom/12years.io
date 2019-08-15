@@ -1,35 +1,50 @@
+/* bodies */
 h1{
+  font-size: 50px;
   font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin-top: 41.5px !important;
 }
-
 h2{
   font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
-
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+a {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration:none;
+  color: #818181;
+}
 label{
   font-family: 'Playfair Display', serif !important;
   border: 0px;
 }
-
 input{
   font-family: 'Playfair Display', serif !important;
   border: 0px !important;
   border-radius: 0 !important;
   font-size: 15px !important;
-  padding: 5px !important;
+  padding: 10px !important;
 }
-
 textarea{
   font-family: 'Playfair Display', serif !important;
   border: 0px !important;
   border-radius: 0 !important;
   font-size: 15px !important;
-  padding: 5px !important;
+  padding: 10px !important;
 }
-
 button{
   font-family: 'Playfair Display', serif !important;
+  padding: 0px 20px 0px 0px !important;
 }
+.pure-button !important{}
+
 
 /* The Overlay (background) */
 .overlay {
@@ -46,10 +61,8 @@ button{
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   column-count: 4;
   column-gap: 20px;
-
 }
-
-/* Position the content inside the overlay */
+  /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
   top: 25%; /* 25% from the top */
@@ -57,8 +70,7 @@ button{
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
-
-/* The navigation links inside the overlay */
+  /* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -67,13 +79,11 @@ button{
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
-
-/* When you mouse over the navigation links, change their color */
+  /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
   color: #818181;
 }
-
-/* Position the close button (top right corner) */
+  /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -84,7 +94,6 @@ button{
 #sidebar {
   padding: 32px 8px 8px 24px;
   font-size: 17px;
-
 }
 #sidebar1 {
   font-size: 20px;
@@ -92,21 +101,58 @@ button{
   padding-top: 5px;
   padding-bottom: 2px;
 }
-
 #sidebar2 {
   font-size: 20px;
   transition: 0.3s;
   padding-top: 19px;
   padding-bottom: 2px;
 }
-
 #sidebar3 {
   font-size: 20px;
   transition: 0.3s;
   padding-top: 71px;
   padding-bottom: 2px;
 }
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+
+/* social media */
+  .fa {
+    padding: 12px 11px 10px 11px;
+    text-align: center;
+    margin: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    }
+  .fa-instagram {
+    background: #77bba4;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-google {
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    text-decoration: none;
+  }
+
+
+/*text alignment */
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -115,22 +161,31 @@ button{
     right: 35px;
   }
 }
-
 .bottomleft{
   position: absolute;
   bottom: 100px;
   left: 10px;
-
-
-
 }
-
+.bottomleft2 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #818181;
+}
+.bottomright{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: #818181;
+}
 .leftcolumn {
   float: left;
   width: fit-content;
 }
 .rightcolumn {
-  float: right;
-  padding-right: 39%;
+  float: center;
   height: -webkit-fill-available;
 }

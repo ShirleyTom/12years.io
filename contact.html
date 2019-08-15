@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <link rel = "stylesheet" href = "contact.css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
   .honeypot-field {
-  display: none;
+  display:none;
 }
 </style>
 <head>
@@ -33,7 +33,7 @@
     <br>
     <br>
    <div class="column">
-    <a id="sidebar3" href="#">America</a>
+    <a id="sidebar3" href="america.html">America</a>
       <a id="sidebar" href="#">Cities<a>
       <a id="sidebar" href="#">Taming<a>
       <a id="sidebar" href="#">Loss of Habitat<a>
@@ -62,6 +62,18 @@
   </div>
 
   <div class="row">
+    <div class="bottomleft2">
+      <a href="index.html">Home</a>&nbsp;|
+      <a href="contact.html">Contact</a>&nbsp;|
+      <a href="asia.html">Asia</a>&nbsp;|
+      @2019
+    </div>
+    <div class="bottomright">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="mailto:twelfth.year.2019@gmail.com" class="fa fa-google"></a>
+      <a href="https://www.youtube.com/channel/UCuYSrvyhg192DbGTYiJb0eA" class="fa fa-youtube"></a>
+    </div>
+
     <div class="leftcolumn">
   	   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
@@ -69,31 +81,38 @@
 <center>
 <div class="rightcolumn">
   <div id="main">
-
+  <h1>
+  <a style="
+      color: black;
+      font-size: 50px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      margin-top: 41.5px;"
+    href="index.html">Twelve Years&nbsp;&nbsp;&nbsp;</a>
+  </h1>
   <h2 class="content-head is-center">Contact Us</h2>
 
 <!-- START HERE -->
    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="style.css">
 
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="endar.li215@gmail.com"
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="twelfth.year.2019@gmail.com"
   action="https://script.google.com/macros/s/AKfycbyqO1dYxGm8PKEjoMNWgVSNOnFSXuK-O5_F0uYzM8H0qT6_aCQ/exec">
     <!-- change the form action to your script url -->
 
     <div class="form-elements">
       <fieldset class="pure-group">
-        <input size="35" style="box-shadow: 7px 7px 10px grey" id="name" name="name" placeholder="Name (ex: Peppa the Pig)" />
+        <input size="40" style="box-shadow: 6px 6px 12px grey" id="name" name="name" placeholder="Name (ex: Peppa the Pig)" />
       </fieldset>
 
       <fieldset class="pure-group">
-        <input size="35" style="box-shadow: 7px 7px 10px grey" id="email" name="email" type="email" value=""
+        <input size="40" style="box-shadow: 6px 6px 12px grey" id="email" name="email" type="email" value=""
         required placeholder="Email (ex: peppa.the.pig@gmail.com)"/>
       </fieldset>
 
       <fieldset class="pure-group">
-        <textarea rows="10" cols="35" size="35" style="box-shadow: 7px 7px 10px grey" id="message" name="message" rows="10"
+        <textarea rows="10" cols="40" size="35" style="box-shadow: 6px 6px 12px grey" id="message" name="message" rows="10"
         placeholder="Your message to us..."></textarea>
       </fieldset>
 
@@ -102,14 +121,16 @@
         <input id="honeypot" type="text" name="honeypot" value="" />
       </fieldset>
 
-      <button class="button-success pure-button button-xlarge">
+      <br>
+
+      <button style="box-shadow: 5px 5px 15px grey" class="button-success pure-button button-xlarge">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
 
     <!-- Customise the Thankyou Message People See when they submit the form: -->
     <div class="thankyou_message" style="display:none;">
-      <h3>Thanks for contacting us!
-        We will get back to you soon!</h3>
+      <h2>Thanks for contacting us!
+        We will get back to you soon!</h2>
     </div>
 
   </form>
