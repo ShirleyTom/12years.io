@@ -3,12 +3,13 @@ body {
   font-family: 'Playfair Display', serif;
   transition: background-color .5s;
   background-color:#f0f2f7ff;
+  margin-top: 0px;
 }
 h1{
   font-size: 50px;
   font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  margin-top: 10px !important;
+  margin-top: 0px !important;
+  font-weight: normal;
 }
 h2 {
   font-size: 40px;
