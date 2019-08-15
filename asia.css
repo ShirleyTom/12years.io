@@ -122,19 +122,18 @@ body {
 }
 
 .card2 {
-  opacity: 0;
   float: left;
   width: 700px;
   height: 400px;
-  background-color: black;
+
 }
 
 .card3 {
-  opacity: 0;
+  opacity: 1;
   float: right;
   width: 700px;
   height: 400px;
-  background-color: black;
+  background-color: #dcefdc;
 }
 
 .container {
