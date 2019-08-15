@@ -1,16 +1,17 @@
 body {
-  background-image: url('pics/panda.jpg');
+  background-image: url('pics/panda (2).jpg');
   background-color: #f0f2f7ff ;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: top;
   background-size: 100%;
   margin: 0px;
+  font-family: 'Playfair Display', serif;
 }
 
 .title{
   font-size: 50px;
-  color:white;
+  color:black;
 
 }
 
@@ -122,22 +123,25 @@ body {
 }
 
 .card2 {
-  float: left;
-  width: 700px;
+  width: 800px;
   height: 400px;
-
-}
+  }
 
 .card3 {
   opacity: 1;
-  float: right;
-  width: 700px;
+  width: 500px;
   height: 400px;
   background-color: #dcefdc;
 }
 
-.container {
-  margin: 10px;
+.container1 {
+  margin-left: 200px;
+  height: 100%;
+  display: flex;
+}
+
+.container2 {
+  margin-left: 10px;
   height: 100%;
   display: flex;
 }
