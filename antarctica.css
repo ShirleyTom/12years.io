@@ -124,25 +124,28 @@ body {
 }
 
 .card2 {
-  width: 800px;
+  left: 50px;
+  width: 45%;
   height: 400px;
   }
-
 .card3 {
+  margin-top: 2px;
   opacity: 1;
-  width: 500px;
+  width: 35%;
   height: 400px;
   background-color: #dcefdc;
 }
 
 .container1 {
-  margin-left: 200px;
+  margin-left: 25%;
   height: 100%;
   display: flex;
+  width: 80%;
 }
 
 .container2 {
   margin-left: 10px;
   height: 100%;
   display: flex;
+  width: 80%;
 }
