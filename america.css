@@ -20,15 +20,17 @@ h2 {
   color: black;
 }
 h3 {
-  font-size: 30px;
-  color: black;
-  margin-bottom: 40px;
+  padding-top: 75px;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 35px;
 }
 p {
   color: white;
   line-height: 2;
   text-align: justify;
   width: 60%;
+  font-size: 20px;
 }
 /* The Overlay (background) */
 .overlay {
@@ -116,6 +118,17 @@ p {
     right: 35px;
   }
 }
+@media screen and (max-width: 950px) {
+  p {
+    font-size: 10px;
+  }
+  h3 {
+    padding-top: 35px;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+}
+
 .card {
    padding: 4% 0px 10px 20px;
    margin: 0px;
@@ -144,14 +157,13 @@ p {
 }
 .rightcolumn {
   float: right;
-  height: -webkit-fill-available; 
+  height: -webkit-fill-available;
 }
 .row {
   opacity: 0.6;
   width: 80%;
-  height: 550px;
+  height: 100%;
   background-color: black;
-  text-align:center;
 }
 img {
   height: 68%;
