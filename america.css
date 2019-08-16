@@ -1,6 +1,5 @@
-/*paragraphs*/
 body {
-  background-image: url('pics/bear.jpg');
+  background-image: url('pics/polarbear.jpg');
   background-color: #f0f2f7ff ;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -9,19 +8,16 @@ body {
   margin: 0px;
   font-family: 'Playfair Display', serif;
 }
+
 h1{
   font-size: 50px;
   font-family: 'Playfair Display', serif;
   margin-top: 0px !important;
   font-weight: normal;
 }
-h2 {
-  font-size: 40px;
-  color: black;
-}
 h3 {
   padding-top: 75px;
-  font-size: 35px;
+  font-size: 32px;
   color: white;
   margin-bottom: 35px;
 }
@@ -32,7 +28,7 @@ p {
   width: 60%;
   font-size: 20px;
 }
-/* The Overlay (background) */
+
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
@@ -85,7 +81,6 @@ p {
 #sidebar {
   padding: 32px 8px 8px 24px;
   font-size: 17px;
-
 }
 #sidebar1 {
   font-family: 'Playfair Display', serif;
@@ -118,15 +113,28 @@ p {
     right: 35px;
   }
 }
-@media screen and (max-width: 950px) {
-  p {
-    font-size: 10px;
-  }
-  h3 {
-    padding-top: 35px;
-    font-size: 17px;
-    margin-bottom: 15px;
-  }
+
+.bottomleft{
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+}
+
+.leftcolumn {
+  float: left;
+  width: fit-content;
+}
+
+.rightcolumn {
+  float: right;
+  height: -webkit-fill-available;
+}
+
+.card1 {
+  opacity: 0.6;
+  width: 1250px;
+  height: 550px;
+  background-color: black;
 }
 
 .card {
@@ -165,26 +173,9 @@ p {
   width: 80%;
 }
 
-.bottomleft{
-  position: absolute;
-  bottom: 100px;
-  left: 10px;
-}
-.leftcolumn {
-  float: left;
-  width: fit-content;
-}
-.rightcolumn {
-  float: right;
-  height: -webkit-fill-available;
-}
 .row {
   opacity: 0.6;
   width: 85%;
   height: 100%;
   background-color: black;
-}
-img {
-  height: 68%;
-  position: absolute;
 }

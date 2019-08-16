@@ -9,10 +9,24 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.title{
+h1{
   font-size: 50px;
-  color:black;
-
+  font-family: 'Playfair Display', serif;
+  margin-top: 0px !important;
+  font-weight: normal;
+}
+h3 {
+  padding-top: 75px;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 35px;
+}
+p {
+  color: white;
+  line-height: 2;
+  text-align: justify;
+  width: 60%;
+  font-size: 20px;
 }
 
 .overlay {
@@ -123,6 +137,15 @@ body {
   background-color: black;
 }
 
+.card {
+   padding: 2% 0px 10px 20px;
+   margin: 0px;
+   background-color: #f0f2f7ff;
+   opacity: .5;
+   width: 40%;
+   float:left;
+   text-align: justify;
+}
 .card2 {
   left: 50px;
   width: 45%;
@@ -148,4 +171,11 @@ body {
   height: 100%;
   display: flex;
   width: 80%;
+}
+
+.row {
+  opacity: 0.6;
+  width: 85%;
+  height: 100%;
+  background-color: black;
 }
