@@ -5,6 +5,41 @@ body {
 html{
   scroll-behavior: smooth;
 }
+p{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  text-align: justify;
+}
+h4{
+text-decoration: none;
+color:grey;
+margin-top: 0px;
+}
+h3{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0px;
+  float: left;
+}
+h6{
+  font-size: 14px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: left;
+}
+h1{
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0px;
+  float: left;
+}
+a{
+  color: black;
+}
 
 #cities {
   height: 500px;
@@ -163,11 +198,12 @@ html{
   width: 20%;
   margin-right: 100px;
 }
+
  .card{
    height: 425px;
    width: auto;
    background-color: white;
    opacity: 0.5;
-     margin-top: 25px;
+   margin-top: 25px;
 
  }
