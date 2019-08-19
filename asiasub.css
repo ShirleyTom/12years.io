@@ -164,14 +164,10 @@ html{
   margin-right: 100px;
 }
  .card{
-   height: 1000px;
+   height: 425px;
    width: auto;
    background-color: white;
    opacity: 0.5;
      margin-top: 25px;
 
- }
- #root {
-   max-width: 1200px;
-   margin: 0 auto;
  }
