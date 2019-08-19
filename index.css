@@ -13,9 +13,14 @@ body {
 h1 {
   color: grey
 }
-
 h2 {
   font-size: 50px;
+  color: black;
+  margin-top: 0px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 40px;
   color: black;
   margin-top: 0px;
   font-weight: normal;
@@ -144,7 +149,7 @@ p {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:active .flip-card-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -170,7 +175,7 @@ p {
   width: 300px;
 }
 /* Responsive columns */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 900px) {
   .column1 {
     width: 100% !important;
     display: block;
@@ -179,12 +184,19 @@ p {
   .row {
     margin-top: 220% !important;
   }
+  .top-center {
+    font-size: 30px !important
+  }
+  .bottom-center {
+    top:43%;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+  }
 }
 .column1 {
-  margin-top: 65%;
   float: left;
   width: 40%;
-  padding: 0 5%;
+  padding: 0 5% 5% 5%;
 }
 .bottomleft{
   position: absolute;
@@ -202,7 +214,45 @@ p {
 }
 .image {
   margin: 8% 7.5% 10% 7.5%;
-  opacity: .7;
-  width: 80%;
+  opacity: .4;
+  width: 75%;
   box-shadow: 17px 23px #dee2ed;
+}
+/* mission */
+.container {
+  margin-top: 58%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Bottom left text */
+.bottom-center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  line-height: 2;
+  top: 50%;
+  font-size: 30px;
+  color: black;
+  margin-top: 0px;
+  font-weight: normal;
+}
+/* Top left text */
+.top-center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  font-size: 40px;
+  color: black;
+  margin-top: 0px;
+  font-weight: normal;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
