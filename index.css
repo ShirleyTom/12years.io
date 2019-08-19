@@ -1,12 +1,17 @@
 /*paragraphs*/
 body {
   font-family: 'Playfair Display', serif;
+  background-color: #f0f2f7ff;
   transition: background-color .5s;
   background-image: url("pics/elephant.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
   margin-top: 0px;
+}
+
+h1 {
+  color: grey
 }
 
 h2 {
@@ -16,7 +21,10 @@ h2 {
   font-weight: normal;
 }
 p {
-  color: black;
+  color: grey;
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 /* The Overlay (background) */
 .overlay {
@@ -110,13 +118,73 @@ p {
   }
 }
 .card {
-   padding: 20px 20px 20px 20px;
+   padding: 20px;
    position: absolute;
    top: 20%;
    right: 10%;
-   width: 200px;
+   width: 230px;
    background-color: #f0f2f7ff;
    opacity: .55;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  height: 300px;
+  width: 300px;
+}
+/* Responsive columns */
+@media screen and (max-width: 740px) {
+  .column1 {
+    width: 100% !important;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .row {
+    margin-top: 220% !important;
+  }
+}
+.column1 {
+  margin-top: 65%;
+  float: left;
+  width: 40%;
+  padding: 0 5%;
 }
 .bottomleft{
   position: absolute;
@@ -131,4 +199,10 @@ p {
 .rightcolumn {
   float: right;
   height: -webkit-fill-available;
+}
+.image {
+  margin: 8% 7.5% 10% 7.5%;
+  opacity: .7;
+  width: 80%;
+  box-shadow: 17px 23px #dee2ed;
 }
