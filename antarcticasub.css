@@ -42,13 +42,7 @@ a{
   color: black;
 }
 
-#cities {
-  height: 500px;
-  background-color: #f8f9fc;
-  margin-top: 25px;
-}
-
-#taming {
+#pollution {
   height: 500px;
   background-color: #f8f9fc;
   margin-top: 25px;
