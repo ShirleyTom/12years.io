@@ -1,15 +1,17 @@
 body {
   background-color: #f0f2f7ff ;
   font-family: 'Playfair Display', serif;
+  color: grey;
 }
 html{
   scroll-behavior: smooth;
 }
 p{
   margin-left: 10%;
-  margin-right: 20%;
-  margin-top: 5%;
+  margin-right: 10%;
+  margin-top: 1.5%;
   text-align: justify;
+  line-height: 1.75;
 }
 h4{
 text-decoration: none;
@@ -42,29 +44,19 @@ a{
 
 #cities {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
 #taming {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
 #habitat {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
-  margin-top: 25px;
-}
-
-#transportation {
-  height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
@@ -197,10 +189,22 @@ a{
   width: 20%;
   margin-right: 100px;
 }
+
+
+.leftcolumn2 {
+  float: left;
+  width:70%;
+}
+
+.rightcolumn2 {
+  float: right;
+  width: 10%;
+}
+
  .card{
    height: 425px;
    width: auto;
-   background-color: white;
-   opacity: 0.5;
+   background-color: #f8f9fc;
    margin-top: 25px;
+
  }
