@@ -39,7 +39,7 @@ h1{
   float: left;
 }
 a{
-  color: black;
+  color: grey;
 }
 
 #cities {
@@ -55,12 +55,6 @@ a{
 }
 
 #habitat {
-  height: 500px;
-  background-color: #f8f9fc;
-  margin-top: 25px;
-}
-
-#transportation {
   height: 500px;
   background-color: #f8f9fc;
   margin-top: 25px;
