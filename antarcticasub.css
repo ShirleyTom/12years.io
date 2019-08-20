@@ -60,6 +60,12 @@ a{
   margin-top: 25px;
 }
 
+#fishing {
+  height: 500px;
+  background-color: #f8f9fc;
+  margin-top: 25px;
+}
+
 .button {
   text-decoration: none;
   background-color: white;
