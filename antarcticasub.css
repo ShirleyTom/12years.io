@@ -39,7 +39,13 @@ h1{
   float: left;
 }
 a{
-  color: black;
+  color: grey;
+}
+
+#fishing {
+  height: 500px;
+  background-color: #f8f9fc;
+  margin-top: 25px;
 }
 
 #pollution {
@@ -49,12 +55,6 @@ a{
 }
 
 #habitat {
-  height: 500px;
-  background-color: #f8f9fc;
-  margin-top: 25px;
-}
-
-#fishing {
   height: 500px;
   background-color: #f8f9fc;
   margin-top: 25px;
@@ -206,5 +206,32 @@ a{
    width: auto;
    background-color: #f8f9fc;
    margin-top: 25px;
-
  }
+ * {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 160px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 50%;
+}
