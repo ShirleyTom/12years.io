@@ -198,6 +198,18 @@ a{
   margin-right: 100px;
 }
 
+
+.leftcolumn2 {
+  float: left;
+  width:65%;
+}
+
+.rightcolumn2 {
+  float: right;
+  width: 20%;
+  margin-right: 10px;
+}
+
  .card{
    height: 425px;
    width: auto;
