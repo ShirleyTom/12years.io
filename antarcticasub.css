@@ -1,36 +1,62 @@
 body {
   background-color: #f0f2f7ff ;
   font-family: 'Playfair Display', serif;
+  color: grey;
 }
 html{
   scroll-behavior: smooth;
 }
+p{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1.5%;
+  text-align: justify;
+  line-height: 1.75;
+}
+h4{
+text-decoration: none;
+color:grey;
+margin-top: 0px;
+}
+h3{
+  margin-left: 5%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: left;
+}
+h6{
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 23px;
+  float: right;
+}
+h1{
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  float: left;
+}
+a{
+  color: grey;
+}
 
-#cities {
+#fishing {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
-#taming {
+#pollution {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
 #habitat {
   height: 500px;
-  background-color: white;
-  opacity: 0.5;
-  margin-top: 25px;
-}
-
-#transportation {
-  height: 500px;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f8f9fc;
   margin-top: 25px;
 }
 
@@ -163,11 +189,50 @@ html{
   width: 20%;
   margin-right: 100px;
 }
- .card{
-   height: 1000px;
-   width: auto;
-   background-color: white;
-   opacity: 0.5;
-     margin-top: 25px;
 
+
+.leftcolumn2 {
+  float: left;
+  width:70%;
+}
+
+.rightcolumn2 {
+  float: right;
+  width: 30%;
+}
+
+ .card{
+   height: 425px;
+   width: auto;
+   background-color: #f8f9fc;
+   margin-top: 25px;
  }
+ * {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 140px; /*should be the same height as the images*/
+  margin-top: 25%;
+}
+
+.img-comp-img {
+  position: absolute;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 50%;
+}
