@@ -1,6 +1,6 @@
 body {
   background-image: url('pics/panda.jpg');
-  background-color: #f0f2f7ff ;
+  background-color: #f0f2f7ff;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: top;
@@ -9,10 +9,24 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.title{
+h1{
   font-size: 50px;
-  color:black;
-
+  font-family: 'Playfair Display', serif;
+  margin-top: 0px !important;
+  font-weight: normal;
+}
+h3 {
+  padding-top: 0px;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 35px;
+}
+p {
+  color: white;
+  line-height: 2;
+  text-align: justify;
+  width: 60%;
+  font-size: 20px;
 }
 
 .overlay {
@@ -124,26 +138,45 @@ body {
   background-color: black;
 }
 
+.card {
+   padding: 2% 0px 10px 20px;
+   margin: 0px;
+   background-color: #f0f2f7ff;
+   opacity: .5;
+   width: 40%;
+   float:left;
+   text-align: justify;
+}
 .card2 {
-  width: 800px;
+  left: 50px;
+  width: 45%;
   height: 400px;
   }
-
 .card3 {
+  margin-top: 2px;
   opacity: 1;
-  width: 500px;
+  width: 35%;
   height: 400px;
   background-color: #dcefdc;
 }
 
 .container1 {
-  margin-left: 200px;
+  margin-left: 25%;
   height: 100%;
   display: flex;
+  width: 80%;
 }
 
 .container2 {
   margin-left: 10px;
   height: 100%;
   display: flex;
+  width: 80%;
+}
+
+.row {
+  opacity: 0.6;
+  width: 85%;
+  height: auto;
+  background-color: black;
 }
