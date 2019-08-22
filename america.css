@@ -16,7 +16,7 @@ h1{
   font-weight: normal;
 }
 h3 {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
   margin-bottom: 35px;
 }
@@ -28,7 +28,7 @@ p {
   line-height: 2;
   text-align: justify;
   width: 60%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .overlay {
@@ -114,6 +114,14 @@ p {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  p {
+    visibility: hidden;
+  }
+  .row {
+    height: 200px !important;
   }
 }
 
