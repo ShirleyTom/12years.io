@@ -21,6 +21,15 @@ h3 {
   color: white;
   margin-bottom: 35px;
 }
+a {
+  color: grey;
+  font-size: 24px;
+  margin: 20px 0px;
+  font-family: 'Playfair Display', serif;
+}
+h4 {
+  color: grey;
+}
 p {
   color: white;
   line-height: 2;
@@ -147,30 +156,34 @@ p {
    float:left;
    text-align: justify;
 }
+
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: 10px;
+  }
+}
 .card2 {
   left: 50px;
   width: 45%;
-  height: 400px;
+  height:100%;
+  margin-top: 15%;
   }
 .card3 {
-  margin-top: 2px;
   opacity: 1;
   width: 35%;
-  height: 400px;
-  background-color: #dcefdc;
+  background-color: #e4d4ce;
+  margin: 15% 10% 10% 10%;
 }
 
 .container1 {
   margin-left: 25%;
   height: 100%;
-  display: flex;
   width: 80%;
 }
 
 .container2 {
   margin-left: 10px;
   height: 100%;
-  display: flex;
   width: 80%;
 }
 
@@ -179,4 +192,8 @@ p {
   width: 85%;
   height: 370px;
   background-color: black;
+}
+.container {
+  box-shadow: 8.5px 11.5px #e4d4ce;
+  background-color:#ede2de;
 }
