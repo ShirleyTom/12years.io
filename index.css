@@ -55,7 +55,7 @@ p {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 70px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -84,7 +84,6 @@ p {
 #sidebar {
   padding: 32px 8px 8px 24px;
   font-size: 17px;
-
 }
 #sidebar1 {
   font-family: 'Playfair Display', serif;
@@ -92,6 +91,7 @@ p {
   transition: 0.3s;
   padding-bottom: 2px;
   font-family: 'Playfair Display', serif;
+  margin-top: 42px;
 }
 #sidebar2 {
   font-family: 'Playfair Display', serif;
@@ -203,7 +203,6 @@ p {
   bottom: 100px;
   left: 10px;
 }
-
 .leftcolumn {
   float: left;
   width: fit-content;

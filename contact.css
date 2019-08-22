@@ -1,9 +1,6 @@
 /* bodies */
 h1{
-  font-size: 50px;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  margin-top: 10px !important;
+  margin-top: 0px !important;
 }
 h2{
   font-family: 'Playfair Display', serif;
@@ -101,6 +98,7 @@ button{
   transition: 0.3s;
   padding-bottom: 2px;
   font-family: 'Playfair Display', serif;
+  margin-top: 54px;
 }
 #sidebar2 {
   font-family: 'Playfair Display', serif;
