@@ -177,6 +177,6 @@ p {
 .row {
   opacity: 0.6;
   width: 85%;
-  height: auto;
+  height: 370px;
   background-color: black;
 }
