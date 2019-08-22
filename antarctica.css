@@ -21,12 +21,6 @@ h3 {
   color: white;
   margin-bottom: 35px;
 }
-a {
-  color: grey;
-  font-size: 24px;
-  margin: 20px 0px;
-  font-family: 'Playfair Display', serif;
-}
 h4 {
   color: grey;
 }
@@ -195,5 +189,6 @@ p {
 }
 .container {
   box-shadow: 8.5px 11.5px #e4d4ce;
-  background-color:#ede2de;
+  background-color:#f3e2de;
+  padding: 10px 10px 5px 10px;
 }
