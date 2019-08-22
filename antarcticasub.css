@@ -180,6 +180,18 @@ a{
     height: 1200px;
   }
 }
+@media screen and (max-width: 1050px) {
+  .rightcolumn1 {
+    margin-left: 100px !important;
+    height: 300px !important;
+    width: 65% !important;
+    float: left !important;
+  }
+  .card {
+    height: 300px !important;
+    margin-bottom: 50px;
+  }
+}
 
 .bottomleft{
   position: absolute;
@@ -207,6 +219,7 @@ a{
   float: right;
   width: 20%;
   margin-right: 50px;
+  margin-left: 5px;
 }
 
 
